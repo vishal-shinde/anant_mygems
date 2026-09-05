@@ -1,4 +1,4 @@
-#!/Users/Vishu/Documents/Vishal_docs/Anant_project/Anant_work/mygems/.venv/bin/python
+#!/Users/Vishu/Documents/Vishal_docs/Anant_project/Anant_work/mygems/.venv/bin/python3.12
 import sys
 from pip._internal.cli.main import main
 if __name__ == '__main__':

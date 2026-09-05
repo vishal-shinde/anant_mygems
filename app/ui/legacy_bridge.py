@@ -58,3 +58,19 @@ def open_legacy_expense_module():
 
 def open_legacy_purchase_module():
     _open_class_window("metal_purchase", "metal_purchase-WITH_SPLIT_LOT_FIXED_2.py", "MetalPurchaseApp", root_mode=True)
+
+
+def open_legacy_labor_module():
+    _open_class_window("add_labor", "add_labor.py", "LabourManagementApp", root_mode=True)
+
+
+def open_legacy_inventory_module():
+    _open_class_window("stone_mixing", "stone_mixing.py", "StoneLotMixingApp", root_mode=True)
+
+
+def open_legacy_admin_module():
+    _open_class_window("admin_users", "admin_users.py", "UserManagement", root_mode=True)
+
+
+def open_legacy_material_return_module():
+    _open_class_window("material_return", "material_return.py", "MaterialReturnForm", root_mode=True)

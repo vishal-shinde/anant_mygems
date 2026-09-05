@@ -2,9 +2,13 @@ import tkinter as tk
 from tkinter import messagebox
 
 from app.ui.legacy_bridge import (
+    open_legacy_admin_module,
     open_legacy_customer_module,
     open_legacy_employee_module,
     open_legacy_expense_module,
+    open_legacy_inventory_module,
+    open_legacy_labor_module,
+    open_legacy_material_return_module,
     open_legacy_purchase_module,
     open_legacy_sales_module,
 )
@@ -47,6 +51,9 @@ class DashboardWindow(tk.Tk):
             ("Employees", "Employee and labor management"),
             ("Expenses", "Expense management"),
             ("Inventory", "Stock and lot management"),
+            ("Labor", "Work and task tracking"),
+            ("Admin", "User and permission management"),
+            ("Returns", "Material return handling"),
         ]
 
         grid = tk.Frame(self, bg="#0f172a")
@@ -80,6 +87,10 @@ class DashboardWindow(tk.Tk):
             "Customers": open_legacy_customer_module,
             "Employees": open_legacy_employee_module,
             "Expenses": open_legacy_expense_module,
+            "Inventory": open_legacy_inventory_module,
+            "Labor": open_legacy_labor_module,
+            "Admin": open_legacy_admin_module,
+            "Returns": open_legacy_material_return_module,
         }
 
         action = actions.get(name)
